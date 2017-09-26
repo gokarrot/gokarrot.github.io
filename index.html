@@ -12,10 +12,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
     left:10%;
     right:10%;
-    position: fixed; 
+    position: relative; 
     z-index: 1;      
 }
 
@@ -25,7 +25,7 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: lightgray;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
@@ -34,7 +34,7 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
 }
-
+a {text-decoration: none}
 :target:before {
   content:"";
   display:block;
@@ -50,18 +50,6 @@ li a:hover:not(.active) {
       width: 80%;
       margin-top: 10px;
       text-align:left;
-}
-.zebula {
-      width: 80%;
-      margin-top: 5px;
-      text-align:left;
-}
-.pagespace {
-      width: 80%;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      text-align:left;
-      color:white
 }
 .links {
       width: 80%;
@@ -94,164 +82,200 @@ table, th, td {
     background: -moz-linear-gradient(bottom right, green, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, green, yellow); /* Standard syntax (must be last) */
 }
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 10px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 </style>
-<body lang=EN-US link="#BC2700" vlink="#E3791C" style='tab-interval:.5in'>
+<body lang=EN-US link="#BC2700" vlink="#E3791C" style='tab-interval:.5in;'>
 <DIV id="home" align="center" class="container">
 
 <!-- TOP MENU -->
 <div class="nebula">
-<ul >
-  <li>
-  <a href="#home" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'> 
-  More Rewarding
-  </a>
-  </li>
-  
-  <li>
-  <a href="#veggie" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'> 
-  Shopping Veggies 
-  </a>
-  </li>
-  
-  <li>
-  <a  href="#latte" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'> 
-  Drinking Lattes 
-  </a>
-  </li>
-    
-  <li style="float:right;background-color:FF6347">
+<ul ><li><li style="float:right;">
   <a href="#about" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'>
   About Us
-  </a>
-  </li>  
-</ul>
+</a></li></ul>
 </div>
 
-<!-- HEADER -->
-<DIV class="nebula" style='padding:40.00pt 0.00pt 0.00pt 0.00pt;'>
-<TABLE style='width:100%;height:552;'>    <!-- outer table with two columns-->
-<TR style='100%;height:552;'>
+<!-- CONTENT -->
+<DIV class="nebula" style='padding:10.00pt 0.00pt 0.00pt 0.00pt;'>
+<TABLE style='width:100%;height:600;'>    <!-- outer table with two columns-->
+<TR style='100%;height:600;'>
 <TD> <!-- left column of outer table -->
-
-	<table> <!-- table inside left with two rows-->
-		<tr style='width:100%;height:276;'>
-
-			<td>  
-				<table> <!-- table in top left with two columns for comany name and image-->
-					<tr style='width:100%;height:276;'>
-						<td style='width:310;height:276;'>
-    						<p>
-    						<h1 style='font-size:28.0pt;color: black;margin-top:2.0pt;margin-bottom:2.0pt'>    
-    						<span style='font-size:30.0pt;color:red'>Go</span>Karrot    
-    						</h1>
-   							 </br>
-   							 <span style='font-size:16.0pt;color:black;margin-top:2.0pt;margin-bottom:2.0pt;'>
-    						More Rewarding</span> 
-    						</p>
-						</td>
-						<td>
-						<!--
-							<img src="imgs/wright.jpeg" alt="Smiley face" style="width:80px;height:60px;">
-							-->
-						</td>
-
-						<td>
-							<img src="imgs/image001.png" style="float:left;width:220px;height:220px;"> </img>  <!-- gokarrot image -->
-						</td>
-					</tr>
-				</table>
+	<TABLE style='width:100%;height:600;'> <!-- table inside left with two rows-->
+	   	<tr>
+			<td>
+			    <div style='float:left;margin-right:10pt;'>
+			    <a href="#veggie">
+			    <img src="imgs/grocerries00.jpg" style='border-radius: 5px;box-shadow: 5px 5px 5px #888888;'> </img>	
+			    </a>		    
+			    </div>
+			    
+			    <div style='float:left;'>			   
+				<a href="#veggie">
+				<p style='font-size:14.0pt;font-family:"Open Sans", sans-serif;color:#FFFFFF;background:#FF0000;
+				padding:16.00pt 10.00pt 16.00pt 10.00pt;text-align:center;border-radius: 5px;box-shadow: 5px 5px 5px #888888;'>
+				Veggie shopping. More rewarding now!
+				</p>
+				</a>
+				</div>
+				
+				<div style='float:left;margin-left:50pt;margin-top:50pt'>
+    			<h1 style='font-size:28.0pt;color: black;margin-top:2.0pt;margin-bottom:2.0pt'>    
+    			<span style='font-size:32.0pt;color:red'>Go</span>Karrot    
+    			</h1>   							 
+   				<span style='font-size:16.0pt;color:black;margin-top:2.0pt;margin-bottom:2.0pt;'>
+    			&nbsp;&nbsp;More Rewarding</span> 
+    			</div>
+				
 			</td>
-			
+		</tr>	
+					  
+		<tr>
+		    <td>
+		        <div style='float:right;margin-left:10pt'>
+		        <a href="#latte">
+			    <img src="imgs/coffee00.jpg" style='border-radius: 5px;box-shadow: 5px 5px 5px #888888;'> </img>
+			    </a>
+			    </div>
+			    
+			    <div style='float:right'>		   
+				<a href="#latte">
+				<p style='font-size:14.0pt;font-family:"Open Sans", sans-serif;color:#FFFFFF;background:#4d3626;
+				padding:16.00pt 10.00pt 16.00pt 10.00pt;text-align:center;border-radius: 5px;box-shadow: 5px 5px 5px #888888;'>
+				Drinking latte. More rewarding now!
+				</p>
+				</a>
+				</div>
+			</td>
 		</tr>
-
+		
 		<tr>
 			<td>
-				
-				<p id="grad1" style='font-size:14.0pt;font-family:"Trebuchet MS";color:#FFFFFF;background:#008000;
-				padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
-				Veggie shopping is more rewarding now!
-				</p>
-				
-				<p>
-				<img src="imgs/itunes.png" alt="Smiley face" style="float:left;width:57px;height:21px;">
-				<SPAN style='font-family:"Open Sans", sans-serif;font-size:12.0pt;text-align:left'>
-				&nbsp;Download iOS app now for free
+			    				
+				<div  style='float:left;margin-left:30pt;margin-top:0pt'>
+				<img src="imgs/image001.png" style="width:120px;height:120px;border-radius: 25px;background-color:#fafffa"> </img>  <!-- gokarrot image -->						
+				</div>
+
+				<div style='float:left;margin-left:30pt;margin-top:30pt'>
+				<img src="imgs/itunes.png" alt="Smiley face" style="float:left;width:115px;height:43px;">
+				<SPAN style='font-size:12.0pt;text-align:left;padding:0.00pt 0.00pt 0.00pt 0.00pt;'>
+				&nbsp;Download iOS app <br/>&nbsp;now for free
 				</SPAN>
-				</p>
-				
+				</div>				
+				<!--
 				<p>
 				<SPAN style='font-family:"Open Sans", sans-serif;font-size:10.0pt;text-align:left'>
 				&nbsp;We Marshmallows and Oreos:) Android version is coming soon.
 				</SPAN>
 				<img src="imgs/playstore.png" alt="Smiley face" style="float:left;width:21px;height:21px;">
 				</p>
-				
-				<p style='font-size:14.0pt;font-family:"Trebuchet MS";color:#FFFFFF;background:#6F4E37;top-margin:10.00pt;
-				padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
-				Drinking latte is more rewarding now!
-				</p>
-				
+				-->
 			</td>
-		</tr>
-
-	</table>
-	
+		</tr>	    
+		
+    </TABLE>
 </TD> 
 
-<TD style='width:310;height:552;'> <!-- right column of outer table with fixed width -->
-	<img width=310 height=552 src="imgs/image003.png"> </img>  
-
+<!-- 
+<TD> right column of outer table with fixed width -->
+	<!--  
+	<img width=310 height=20 src="imgs/white70px.png"> </img>  	
+	<img width=310 height=268 src="imgs/latte00.png"> </img>
+	
 </TD>
+-->
 </TR>
 </TABLE>
 </DIV>
 
 <!-- VEGGIE -->
-<DIV  class="nebula" style='padding:40.00pt 0.00pt 0.00pt 0.00pt;'>
-<DIV id="veggie" class="nebula" style='width:20px;'> </DIV>  <!-- dummy div for anchor to have space below menu bar? -->
+<hr/>
+<div id="veggie" class="nebula">
+<ul ><li><li style="float:right;">
+  <a href="#home" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'>
+  More Rewarding
+</a></li></ul>
+</div>
+
+<DIV  class="nebula" style='padding:5.00pt 0.00pt 0.00pt 0.00pt;'>
+<DIV class="nebula" style='width:0px;'></DIV>  <!-- dummy div for anchor to have space below menu bar? -->
 
 <TABLE style='width:100%;'>
 <TR style='width:100%;height:552;'>
 
 <TD style="vertical-align: top;">
 <div class="nebula">
+
 <p>
 <span style='font-size:14.0pt;font-family:"Trebuchet MS";
 color:#FFFFFF;background:#FF0000;padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
-We challenged old way of shopping veggies
+Traditional way of shopping veggies
 </span>
 </p>
 
-<p  style='margin-bottom:0in;margin-bottom:.0001pt'>
-<span style='font-size:12.0pt;font-family: "Open Sans", sans-serif;color:#353535'>
-We all know veggies are fun, beautiful, cool and rewarding. With lots of colors and families, it is like a spectrum. The way we shop 
-does not deliver the best because we pick what we like and repeat the same; though we love to enjoy more varieties.
+<p  style='font-size:12.0pt;font-family: "Open Sans", sans-serif;color:#353535;padding: 5.00pt 5.00pt 5.00pt 5.00pt;'>
+<span style='background-color: #FFFFFF'>
+We all know veggies are fun, cool and rewarding. With lots of colors and families, they form a beautiful spectrum.
+</span>
+<span style='background-color: #FFFF00'>
+<br/></br>
+</span>
+<span style='background-color: #FFFF00'>
+Yet the way we shop veggies does not deliver the best. Because we pick from Mom's list or what we like and repeat the same, 
+though we love to enjoy more varieties.
 </span>
 </p>
 
+<br/>
 <p><span style='font-size:14.0pt;font-family:"Trebuchet MS";color:#FFFFFF;
 background:#008000;padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
-GoKarrot: Shopping Veggies is More Rewarding to You
+What if you eat them all
 </span></p>
 
-<p><span style='font-size:12.0pt;font-family: "Open Sans", sans-serif;color:#353535'>
-GoKarrot helps you with a tap on the phone. It helps you to eat across awesome spectrum of vegies.
+<p  style='font-size:12.0pt;font-family: "Open Sans", sans-serif;color:#353535;padding: 5.00pt 5.00pt 5.00pt 5.00pt;'>
+&#x1F308;&nbsp;
+<span style='background-color: #FFFFFF'>
+Here you will eat across awesome spectrum of vegies.
+</span>
 </br></br>
-Gives you an instant list, when you are ready to shop veggies.
+&#x1f6d2;&nbsp;
+<span style='background-color: #FFFFFF'>
+You get an instant list, whenever you are ready to shop veggies.
+</span>
+&#x0031;&nbsp;
+<span style='background-color: #FFFFFF'>
+Instant lists are unique to you, every time.
+</span>
+&#x1f4c6;&nbsp;
+<span style='background-color: #FFFFFF'>
+Your days on a smart veggie path are automatically tracked.
+</span>
+
 </br>
-Remembers them so that you will get all of them over time. 
+<!--
+&#x1F308;&nbsp;
+<span style='background-color: #FFFFFF'>
+if446
+</span>
 </br>
-Frees you up from doing complex health math. 
+-->
 </br>
-Gives lists that are unique to every one and every time.
+
+<span style='background-color: #FFFFFF'>
+You are free from doing complex health math. Every usage of the app adds up. You ca expand your diet and stay in that path.
+</span>
 </br>
-Counts number of weeks you are on a smart veggie path.
-</span></p>
+</p>
 
 <p  style='margin-bottom:0in;margin-bottom:.0001pt'>
 <span style='font-size:12.0pt;font-family: "Open Sans", sans-serif;color:#353535'>
-Every usage of the app help to expand your diet and stay in that path. Yes, this app is made for you to 
-eat across awesome spectrum of vegies. </br></br><u>This is free to you.</u> What we want in return? A wish from you for a smile and 
+</br><u>This is free to you.</u> What we want in return? A wish from you for a smile and 
 research break through for people with Parkinson's and other neuro degenerative deseases. To learn and help the cause,
  please visit <u>http://parkinsons.org</u>
 </span>
@@ -268,8 +292,16 @@ research break through for people with Parkinson's and other neuro degenerative 
 </DIV>
 
 <!-- LATTE -->
-<DIV class="nebula" style='padding:40.00pt 0.00pt 0.00pt 0.00pt;'>
-<DIV id="latte" class="nebula" style='width:20px;'> </DIV>  <!-- dummy div for anchor to have space below menu bar?-->
+<hr/>
+<div id="latte" class="nebula">
+<ul ><li><li style="float:right;">
+  <a href="#home" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'>
+  More Rewarding
+</a></li></ul>
+</div>
+
+<DIV class="nebula" style='padding:5.00pt 0.00pt 0.00pt 0.00pt;'>
+<DIV class="nebula" style='width:0px;'> </DIV>  <!-- dummy div for anchor to have space below menu bar?-->
 
 <TABLE style='width:100%;'>
 <TR style='width:100%;height:552;'>
@@ -293,10 +325,10 @@ We challenged old way of having coffee
 Espresso, Latte, Tea Latte, Cappuccino, Ristretto or whatever you are drinking, it is your lifestyle. 
 We can only wish to top the taste of it. 
 </span>
-
-
+</p>
+<br/>
 <p>
-<span style='font-size:14.0pt;font-family:"Trebuchet MS";color:#FFFFFF;background:#6F4E37;padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
+<span style='font-size:14.0pt;font-family:"Trebuchet MS";color:#FFFFFF;background:#4d3626;padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
 What if you add a praise
 </span><span style='color:red'> &nbsp; *Premium feature </span>
 </p>
@@ -319,7 +351,7 @@ Even if you are not a latte drinker we are confident, this will bring best out o
 
 
 <TD style='width:310;'>
-<img width=310 height=552 src="imgs/image003.png"> </img>  
+<img width=310 height=552 src="image003.png"> </img>  
 </TD>
 
 </TR>
@@ -328,8 +360,16 @@ Even if you are not a latte drinker we are confident, this will bring best out o
 
 
 <!-- ABOUT US -->
-<DIV class="nebula" style='padding:40.00pt 0.00pt 0.00pt 0.00pt;'>
-<DIV id="about" class="nebula" style='width:20px;'> </DIV>  <!-- dummy div for anchor to have space below menu bar?-->
+<hr/>
+<div id="about" class="nebula">
+<ul ><li><li style="float:right;">
+  <a href="#home" style='font-size:12.0pt;font-family: "Open Sans", sans-serif'>
+  More Rewarding
+</a></li></ul>
+</div>
+
+<DIV class="nebula" style='padding:5.00pt 0.00pt 0.00pt 0.00pt;'>
+<DIV class="nebula" style='width:0px;'> </DIV>  <!-- dummy div for anchor to have space below menu bar?-->
 
 <TABLE style='width:100%;'>
 <TR style='width:100%;height:552;'>
@@ -374,6 +414,24 @@ This place hosts head quarters of Lenova in USA. Visit the town while you come n
 <div style="width:600px; margin:0 auto;">
 <img src="imgs/morrisville.jpg" alt="" style="float:center;width:600px;height:270px;">
 </div>
+</br>
+</br>
+<p>
+<span style='font-size:14.0pt;font-family:"Trebuchet MS";color:#FFFFFF;background:#FF6347;padding:8.00pt 10.00pt 8.00pt 10.00pt;'>
+Inspired
+</span>
+</p>
+</br>
+<p  style='margin-bottom:0in;margin-bottom:.0001pt'>
+<span style='font-size:12.0pt;font-family: "Open Sans", sans-serif;color:#353535'>
+We are inspired by Wright brothers for challenging the traditional ways for better. We guess you figured it out, we live and work in North Carolina.</span>
+<!-- 'First in Flight State' -->
+</p>
+</br>
+<div style="width:600px; margin:0 auto;">
+<img src="imgs/Sketchup_Flyer.jpg" alt="" style="float:center;width:600px;height:314px;">
+</div>
+
 </div>
 </TD>
 
