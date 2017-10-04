@@ -1,10 +1,10 @@
 /*  Clouds Anim*/
 .clouds{
 	padding: 100px 0;
-	background: #c9dbe9;
-	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: #70cbce;
+	background: -webkit-linear-gradient(top, #70cbce 0%, #fff 100%);
+	background: -linear-gradient(top, #70cbce 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #70cbce 0%, #fff 100%);
 }
 
 /*Time to finalise the cloud shape*/

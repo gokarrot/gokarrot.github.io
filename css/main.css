@@ -361,7 +361,7 @@ header {
 
 
 #be-the-first {
-  background: url(../img/cafe-de-paris.jpg) #231f20 no-repeat center center fixed;
+  background: url(../img/be-the-first-bg-new.jpg) #231f20 no-repeat center center fixed;
   min-height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -543,7 +543,7 @@ footer {
   font-size: 13px;
   color: #929496;
   background: #ffffff;
-    background: yellow;
+  background: yellow;
 
 }
 .features {
@@ -556,6 +556,7 @@ footer {
 }
 
 .features.first {
+font-weight: 300;
   border-top: 1px dotted #E8EAEA;
 }
 
