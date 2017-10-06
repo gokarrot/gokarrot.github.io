@@ -358,6 +358,18 @@ header {
 	padding: 30px 0px;
 }
 
+.headerBg {
+  background: url(../img/beFirst-bg.png);
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;      
+  /*min-height: 300px;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #be-the-first {
   background-color: #231f20; 
   background: url(../img/be-the-first-bg-new.jpg);
@@ -369,6 +381,9 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-bottom: 1px lightgray solid;
+  height:100%
+  width:100%
 }
 
 hr.line {
