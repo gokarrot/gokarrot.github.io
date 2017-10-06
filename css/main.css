@@ -381,7 +381,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-bottom: 1px lightgray solid;
+  /*border-bottom: 1px lightgray solid;*/
   height:100%
   width:100%
 }
